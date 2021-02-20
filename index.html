@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SDrive</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+    <div class="root-container">
+        <!-- header content -->
+        <header>
+            <div id="logo-pane">
+                <a class="logo-icon" href="https://drive.google.com/?tab=oo&amp;authuser=0" title="Drive">
+                    <img src="//ssl.gstatic.com/images/branding/product/1x/drive_2020q4_48dp.png">
+                    <span class="logo-text">Drive</span>
+                </a>
+            </div>
+            <div id="search-pane">
+                <form style="width: 100%;">
+                    <div class="search-wrapper">
+                        <i style="cursor: pointer;font-size: 21px;color: gray;" class="fa fa-search"
+                            aria-hidden="true"></i>
+                        <input id="searchbar" type="text" placeholder="Search in Drive">
+                        <i style="cursor: pointer;" class="fa fa-caret-down"></i>
+                    </div>
+                </form>
+                <div class="search-right">
+                    <i class="fa fa-question-circle" style="font-size:24px" aria-hidden="true"></i>
+                    <i style="font-size:24px" class="fa">&#xf013;</i>
+                </div>
+            </div>
+            <div id="profile-pane">
+                <i class="fa fa-bars" style="font-size:24px" aria-hidden="true"></i>
+                <div class="acro">
+                    J
+                </div>
+            </div>
+        </header>
+
+        <!-- body content -->
+        <main id="main-body">
+            <div id="left-pane">
+                <button class="new-btn">
+                    <img src="./assets/images/addnew.jpg">
+                    <span>New</span>
+                </button>
+
+                <div class="top-level-icon-container">
+                    <div class="asd">
+                        <i class="fa" id="spcebetween">&#xf2bb;</i>
+                        <span style="margin: 0px;">My Drive</span>
+                    </div>
+                    <div class="asd">
+                        <i class="fa" id="spcebetween">&#xf114;</i>
+                        <span style="margin: 0px;">shared with me</span>
+                    </div>
+                    <div class="asd">
+                        <i class="fa" id="spcebetween">&#xf017;</i>
+                        <span style="margin: 0px;">Recent</span>
+                    </div>
+                    <div class="asd">
+                        <i class="fa" id="spcebetween">&#xf006;</i>
+                        <span style="margin: 0px;">Starrer</span>
+                    </div>
+                    <div class="asd">
+                        <i class="fa" id="spcebetween">&#xf014;</i>
+                        <span style="margin: 0px;">Trash</span>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div id="center-pane">
+                <section id='center-pane-header'>
+                    <div class="center-pane-title">
+                        <span>
+                            My Drive
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="center-pane-actions">
+                        <i title="List view" class="fa fa-list-alt" aria-hidden="true"></i>
+                        <i title="View details" class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    </div>
+                </section>
+                <section id='center-pane-body'>
+                    <h5 class="body-title">Quick Access</h5>
+
+                    <!-- cards comes here! -->
+                    <div class="cards-pane">
+                        <div class="card">
+                            <img class="card-img" src="assets/images/youtube.jpg">
+                            <div class="containercontent"><img class="pdf" img src="assets/images/pdfIcon.png">
+                                <span class="space">10 Interview dos and dont...</span>
+                                <div class="detailcontent">You opened today</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img" src="assets/images/windowsimg.jpg">
+                            <div class="containercontent"><img class="pdf" img src="assets/images/pdfIcon.png">
+                                <span class="space">windowOs20192003.pdf</span>
+                                <div class="detailcontent">You opened in the past week</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img" src="assets/images/resume3.png">
+                            <div class="containercontent"><img class="pdf" img src="assets/images/pdfIcon.png">
+                                <span class="space">Resume20210903.pdf</span>
+                                <div class="detailcontent">You opened in the past week</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img" src="assets/images/resume3.png">
+                            <div class="containercontent"><img class="pdf" img src="assets/images/pdfIcon.png">
+                                <span class="space">Resume20210903.pdf</span>
+                                <div class="detailcontent">You opened in the past week</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img" src="assets/images/resume3.png">
+                            <div class="containercontent"><img class="pdf" img src="assets/images/pdfIcon.png">
+                                <span class="space">Resume20210903.pdf</span>
+                                <div class="detailcontent">You opened in the past week</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </section>
+            </div>
+            <div id="right-pane">
+                <div title="calender" class="side-bar-icon keep"></div>
+                <div title="keep" class="side-bar-icon calender"></div>
+                <div title="notes" class="side-bar-icon notes"></div>
+                <div title="notes" class="side-bar-icon plus-icon"></div>
+            </div>
+        </main>
+    </div>
+
+    <div title="Hide side panel" id="hide-btn">
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+    </div>
+
+</body>
+
+</html>
